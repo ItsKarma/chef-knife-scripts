@@ -9,7 +9,8 @@ if [ -f $BSLOG ]
 then
   mv $BSLOG $BSLOGOLD
 fi
-echo "" > $LOG
+
+echo "Logging output..." > $LOG
 
 for i in $LIST
 do
