@@ -5,9 +5,9 @@ LOGOLD="env_set.log.old"
 LIST=$(sed ':a;N;$!ba;s/\n/ /g' hostlist)
 ENV="your_environment"
 
-if [ -f $BSLOG ]
+if [ -f $LOG ]
 then
-  mv $BSLOG $BSLOGOLD
+  mv $LOG $LOGOLD
 fi
 
 echo "Logging output..." > $LOG
