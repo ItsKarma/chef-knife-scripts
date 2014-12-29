@@ -6,7 +6,7 @@ read -s -p "Enter SSH Password: " PASS
 
 BSLOG="bootstrap.log"
 BSLOGOLD="bootstrap.log.old"
-LIST=$(cat hostlist | sed ':a;N;$!ba;s/\n/ /g' )
+LIST=$(sed ':a;N;$!ba;s/\n/ /g' hostlist)
 
 if [ -f $BSLOG ]
 then
